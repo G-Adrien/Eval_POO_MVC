@@ -17,12 +17,12 @@
 
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Catalogue</a>
+    <a class="nav-link active" href="index.php">Catalogue</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Client</a>
+    <a class="nav-link" href="users.php">Client</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Ajouter un livre</a>
+    <a class="nav-link" href="addBook.php">Ajouter un livre</a>
   </li>
 </ul>

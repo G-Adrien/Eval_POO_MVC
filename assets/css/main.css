@@ -94,7 +94,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-h1{
+
+   /* Utilities class */
+   .fontTitle{
+       font-family: 'Dancing Script', cursive;
+   }
+
+   .fontP{
+         font-family:'Lato', sans-serif;
+   }
+
+
+
+   h1{
     font-family: 'Dancing Script', cursive;
     color: #ECB8A5;
 }
