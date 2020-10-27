@@ -94,7 +94,38 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1{
+    font-family: 'Dancing Script', cursive;
+    color: #ECB8A5;
+}
+.pJump{
+    color: #ECB8A5; 
+}
 
+p{
+    font-family: 'Lato', sans-serif;
+
+}
+
+.jumbotron{
+    background-color: #904C77 !important;
+    border-radius: 0 !important;
+}
+
+.nav{
+    background-color: #ECB8A5 ;
+}
+
+.nav a{
+    color: #904C77;
+}
+
+.navbar{
+    background-color: #904C77 !important;
+}
+.navbar span{
+    color:#ECB8A5
+}
 
 /* ##################################################################### */
 /* ##########################   SMARTPHONE   ########################### */
