@@ -95,21 +95,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* Utilities class */
-   .fontTitle{
-       font-family: 'Dancing Script', cursive;
-   }
-
-   .fontP{
-         font-family:'Lato', sans-serif;
-   }
-
-
-
-   h1{
+/* Utilities class */
+.fontTitle{
     font-family: 'Dancing Script', cursive;
-    color: #ECB8A5;
 }
+
+.fontP{
+        font-family:'Lato', sans-serif;
+}
+
+h3{
+    margin: 1em auto !important;
+}
+
+/* ##################### Header ##################### */
+
+h1{
+font-family: 'Dancing Script', cursive;
+color: #ECB8A5;
+}
+
+
+
 .pJump{
     color: #ECB8A5; 
 }
@@ -125,7 +132,7 @@ p{
 }
 
 .nav{
-    background-color: #ECB8A5 ;
+    background-color: #ECB8A5;
 }
 
 .nav a{
@@ -135,8 +142,37 @@ p{
 .navbar{
     background-color: #904C77 !important;
 }
-.navbar span{
-    color:#ECB8A5
+
+/* ##################### addBook page ##################### */
+
+.field{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.field input, .field textarea{
+    border-radius: 6px;
+    padding-left:10px;
+    width: 100%;
+
+}
+
+#addBookFormDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#addBookForm{
+    width: 90%;
+}
+/* ##################### footer ##################### */
+
+footer{
+    margin-top: 50px;
+}
+
+footer span{
+    color: #ECB8A5;
 }
 
 /* ##################################################################### */

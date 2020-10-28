@@ -14,7 +14,10 @@ class Book {
      //Méthodes
  
      // setter
- 
+    
+     public function setId(string $id) {
+        $this->id = $id;
+        }
      
      public function setTitle(string $title) {
          $this->title = $title;
@@ -36,21 +39,24 @@ class Book {
  
      // getter
  
+     public function getId() {
+         return $this->id;
+    }
      public function getTitle() {
          return $this->title;
-         }
+    }
  
      public function getAuthor() {
          return $this->author;
-         }
+    }
  
      public function getSummary() {
          return $this->summary;
-         }
+    }
  
      public function getPublication() {
          return $this->publication;
-         }
+    }
  
 
 

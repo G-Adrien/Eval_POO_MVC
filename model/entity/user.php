@@ -1,6 +1,6 @@
 <?php
 // Classe représentant les utilisateurs stockés en base de données
-class Utilisateur {
+class User {
 
     //Propriétés 
 
@@ -17,6 +17,9 @@ class Utilisateur {
     // setter
 
     
+    public function setId(string $id) {
+        $this->firstname = $firstname;
+        }
     public function setFirstname(string $firstname) {
         $this->firstname = $firstname;
         }
@@ -43,6 +46,9 @@ class Utilisateur {
 
     // getter
 
+    public function getId() {
+        return $this->id;
+        }
     public function getFirstname() {
         return $this->firstname;
         }

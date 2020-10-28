@@ -25,7 +25,7 @@ VALUES
 
 CREATE TABLE Book(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    tilte VARCHAR(100) NOT NULL,
+    title VARCHAR(100) NOT NULL,
     author VARCHAR(100) NOT NULL,
     summary TEXT(500) NULL,
     publication DATE NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE Book(
 )
 ENGINE = InnoDB; 
 
-INSERT INTO Book(tilte, author, summary, publication)
+INSERT INTO Book(title, author, summary, publication)
 VALUES
 ("Fullmetal Alchemist - Tome 1", "Hiromu Arakawa", " Les frères Elric (Edward et Alphonse) ont hérité leur talent d'alchimiste de leur père mystérieusement disparu. À la suite de la mort de leur mère, les deux jeunes tentent de la faire revivre grâce à l\'alchimie, en faisant une transmutation humaine malgré l\'interdit.",
  "2001-07-12"),

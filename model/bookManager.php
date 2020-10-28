@@ -15,9 +15,8 @@ class BookManager {
 
   // Récupère tous les livres
   public function getBooks() {
-    // Send the query to mysql
 
-    $query = $this->db->prepare(
+    $query = $this->db->query(
       "SELECT * FROM book"
     );
     //Extract data from the query as an associative array
@@ -25,6 +24,7 @@ class BookManager {
     return $books;
   }
 
+  
   // Récupère un livre
   public function getBook() {
 
@@ -41,3 +41,4 @@ class BookManager {
   }
 
 }
+
