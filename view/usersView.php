@@ -25,7 +25,7 @@ require "template/header.php"?>
           <td><?php echo $user->getLastname(); ?></td>
           <td><?php echo $user->getEmail(); ?></td>
           <td><?php echo $user->getSex(); ?></td>
-          <td><?php?> <a href="#">Voir plus</a></td>
+          <td><?php?> <a href="#" class="seeMoreLink">Voir plus</a></td>
         </tr>
 
       <?php

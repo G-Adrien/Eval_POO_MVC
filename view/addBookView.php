@@ -14,25 +14,25 @@
                             <div class= "field">
                                 <label for="title">Titre:</label>
                                 <br>
-                                <input type="text" name="title" id="title">
+                                <input type="text" name="title" id="title" minlength="1" maxlength="120" required>
                             </div>
                             <div div class= "field">
                                 <label for="author">Auteur:</label>
                                 <br>
-                                <input type="text" name="author" id="author">
+                                <input type="text" name="author" id="author" minlength="1" maxlength="120" required>
                             </div>
                             <div div class= "field">
                                 <label for="summary">Synopsis:</label>
                                 <br>
-                                <textarea type="text" name="summary" id="summary"></textarea>
+                                <textarea type="text" name="summary" id="summary" maxlength="1000" size=1000></textarea>
                             </div>
                             <div div class= "field">
                                 <label for="publication">Parution:</label>
                                 <br>
-                                <input type="date" name="publication" id="publication">
+                                <input type="date" name="publication" id="publication" required>
                             </div>
+                            <input type="submit" value="Ajouter" id="btnAddBookForm">
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btnAddBookForm">Ajouter</a>
                             </div>
                         </form>
                     </div>
@@ -46,6 +46,10 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Livre ajouté :</h5>
                     <p class="card-text text-center">Vous venez d'ajouter le livre suivant:</p>
+                    <?php
+                    // echo $book->setTitle($data["title"]);
+                    ?>
+                    <?php echo $book->getTitle(); ?>
                 </div>
             </div>
         </div>

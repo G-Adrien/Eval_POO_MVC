@@ -154,6 +154,7 @@ p{
     border-radius: 6px;
     padding-left:10px;
     width: 100%;
+    border: solid #904C77 2px;
 
 }
 
@@ -165,6 +166,20 @@ p{
 #addBookForm{
     width: 90%;
 }
+
+#btnAddBookForm{
+    border-radius: 6px;
+    padding: 0.5em 2em;
+    background-color: #904C77;
+    color: #ECB8A5;
+    
+}
+/* ##################### user and book page ##################### */
+
+    .seeMoreLink{
+        color: #904C77;
+    }
+
 /* ##################### footer ##################### */
 
 footer{

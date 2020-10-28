@@ -25,7 +25,7 @@ VALUES
 
 CREATE TABLE Book(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    title VARCHAR(100) NOT NULL,
+    title VARCHAR(120) NOT NULL,
     author VARCHAR(100) NOT NULL,
     summary TEXT(500) NULL,
     publication DATE NOT NULL,

@@ -12,6 +12,17 @@ class Book {
 
  
      //Méthodes
+
+        public function __construct(array $data = NULL){
+            if($data){
+                $this->setTitle($data["title"]);
+                $this->setAuthor($data["author"]);
+                $this->setSummary($data["summary"]);
+                $this->setPublication($data["publication"]);  
+            }
+
+        }
+
  
      // setter
     
