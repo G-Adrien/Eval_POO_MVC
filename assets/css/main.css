@@ -96,6 +96,12 @@ textarea {
    ========================================================================== */
 
 /* Utilities class */
+
+.test{
+    background-color: red;
+    color: red;
+}
+
 .fontTitle{
     font-family: 'Dancing Script', cursive;
 }
@@ -179,6 +185,52 @@ p{
     .seeMoreLink{
         color: #904C77;
     }
+
+    .btnBack {
+        margin:20px 0px;
+        
+    }
+    .btnBack a{
+        color: #ECB8A5;
+        background-color: #904C77;
+        text-decoration: none;
+        padding: 1em;
+        border-radius: 100px;
+    }
+
+    .btnBack a:hover{
+        text-decoration: none;
+        color: #a98476;
+        background-color: #6c3859;
+    }
+
+    .fontSpan{
+        font-size: 20px;
+    }
+
+/* ##################### Book ##################### */
+
+    .bookTitle{
+        font-size: 30px ;
+    }
+
+    .bookAuthor{
+        font-size: 25px ;
+    }
+
+/* ##################### User ##################### */
+
+.userSpan{
+    margin-left: 30px;
+
+}
+
+.userTitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 0px auto 40px !important;
+
+}
 
 /* ##################### footer ##################### */
 

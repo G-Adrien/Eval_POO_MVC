@@ -31,7 +31,7 @@ require "template/header.php";
           <td><?php echo $book->getAuthor(); ?></td>
           <td><?php echo $book->getPublication(); ?></td>
           <td><?php?> ?</td>
-          <td><?php?> <a href="#" class="seeMoreLink">Voir plus</a></td>
+          <td><?php?> <a href="book.php?<?php echo "id=".$book->getId();?>" class="seeMoreLink">Voir plus</a></td>
         </tr>
 
       <?php

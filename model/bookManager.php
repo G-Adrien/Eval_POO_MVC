@@ -26,8 +26,15 @@ class BookManager {
 
 
   // Récupère un livre
-  public function getBook() {
+  public function getBook(int $id) {
 
+    $query = $this->db->query(
+      "SELECT * FROM book
+      WHERE id= $id"
+    );
+    //Extract data from the query as an associative array
+    $book = $query->fetchALL(PDO::FETCH_CLASS, "book");
+    return $book;
 
 
   }
