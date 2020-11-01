@@ -95,21 +95,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* Utilities class */
-   .fontTitle{
-       font-family: 'Dancing Script', cursive;
-   }
+/* Utilities class */
 
-   .fontP{
-         font-family:'Lato', sans-serif;
-   }
-
-
-
-   h1{
-    font-family: 'Dancing Script', cursive;
-    color: #ECB8A5;
+.test{
+    background-color: red;
+    color: red;
 }
+
+.fontTitle{
+    font-family: 'Dancing Script', cursive;
+}
+
+.fontP{
+        font-family:'Lato', sans-serif;
+}
+
+h3{
+    margin: 1em auto !important;
+}
+
+/* ##################### Header ##################### */
+
+h1{
+font-family: 'Dancing Script', cursive;
+color: #ECB8A5;
+}
+
+
+
 .pJump{
     color: #ECB8A5; 
 }
@@ -125,7 +138,7 @@ p{
 }
 
 .nav{
-    background-color: #ECB8A5 ;
+    background-color: #ECB8A5;
 }
 
 .nav a{
@@ -135,8 +148,98 @@ p{
 .navbar{
     background-color: #904C77 !important;
 }
-.navbar span{
-    color:#ECB8A5
+
+/* ##################### addBook page ##################### */
+
+.field{
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.field input, .field textarea{
+    border-radius: 6px;
+    padding-left:10px;
+    width: 100%;
+    border: solid #904C77 2px;
+
+}
+
+#addBookFormDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#addBookForm{
+    width: 90%;
+}
+
+#btnAddBookForm{
+    border-radius: 6px;
+    padding: 0.5em 2em;
+    background-color: #904C77;
+    color: #ECB8A5;
+    
+}
+/* ##################### user and book page ##################### */
+
+    .seeMoreLink{
+        color: #904C77;
+    }
+
+    .btnBack {
+        margin:20px 0px;
+        
+    }
+    .btnBack a{
+        color: #ECB8A5;
+        background-color: #904C77;
+        text-decoration: none;
+        padding: 1em;
+        border-radius: 100px;
+    }
+
+    .btnBack a:hover{
+        text-decoration: none;
+        color: #a98476;
+        background-color: #6c3859;
+    }
+
+    .fontSpan{
+        font-size: 20px;
+    }
+
+/* ##################### Book ##################### */
+
+    .bookTitle{
+        font-size: 30px ;
+    }
+
+    .bookAuthor{
+        font-size: 25px ;
+    }
+
+/* ##################### User ##################### */
+
+.userSpan{
+    margin-left: 30px;
+
+}
+
+.userTitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 0px auto 40px !important;
+
+}
+
+/* ##################### footer ##################### */
+
+footer{
+    margin-top: 50px;
+}
+
+footer span{
+    color: #ECB8A5;
 }
 
 /* ##################################################################### */

@@ -12,9 +12,23 @@ class Book {
 
  
      //Méthodes
+
+        public function __construct(array $data = NULL){
+            if($data){
+                $this->setTitle($data["title"]);
+                $this->setAuthor($data["author"]);
+                $this->setSummary($data["summary"]);
+                $this->setPublication($data["publication"]);  
+            }
+
+        }
+
  
      // setter
- 
+    
+     public function setId(string $id) {
+        $this->id = $id;
+        }
      
      public function setTitle(string $title) {
          $this->title = $title;
@@ -36,21 +50,24 @@ class Book {
  
      // getter
  
+     public function getId() {
+         return $this->id;
+    }
      public function getTitle() {
          return $this->title;
-         }
+    }
  
      public function getAuthor() {
          return $this->author;
-         }
+    }
  
      public function getSummary() {
          return $this->summary;
-         }
+    }
  
      public function getPublication() {
          return $this->publication;
-         }
+    }
  
 
 

@@ -26,3 +26,4 @@
     <a class="nav-link" href="addBook.php">Ajouter un livre</a>
   </li>
 </ul>
+<main>

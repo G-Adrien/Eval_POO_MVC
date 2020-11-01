@@ -2,48 +2,37 @@
 require "template/header.php"?>
 <div class= "container">
     <h3 class= "fontTitle" >Listes des clients:</h3>
-    <p>Vos utilisateurs en base de données s'affichent sur cette page</p>
     <table class="table table-hover ">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Prénom</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Email</th>
-      <th scope="col">Adresse</th>
-      <th scope="col">sexe</th>
-      <th scope="col">Date de naissance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@fat</td>
-      <td>@fat</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-      <td>@twitter</td>
-      <td>@twitter</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Prénom</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Email</th>
+          <th scope="col">sexe</th>
+          <th scope="col">Détails</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <?php 
+          foreach($users as $key =>$user):
+        ?>
+        
+        <tr>
+          <th scope="row"><?php echo $user->getId(); ?></th>
+          <td><?php echo $user->getFirstname(); ?></td>
+          <td><?php echo $user->getLastname(); ?></td>
+          <td><?php echo $user->getEmail(); ?></td>
+          <td><?php echo $user->getSex(); ?></td>
+          <td><?php?> <a href="user.php?<?php echo "id=".$user->getId();?>" class="seeMoreLink" class="seeMoreLink">Voir plus</a></td>
+        </tr>
+
+      <?php
+      endforeach;
+      ?>
+    </tbody>
+  </table>
     
 </div>
 

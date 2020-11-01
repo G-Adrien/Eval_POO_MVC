@@ -15,9 +15,8 @@ class BookManager {
 
   // Récupère tous les livres
   public function getBooks() {
-    // Send the query to mysql
 
-    $query = $this->db->prepare(
+    $query = $this->db->query(
       "SELECT * FROM book"
     );
     //Extract data from the query as an associative array
@@ -25,14 +24,34 @@ class BookManager {
     return $books;
   }
 
+
   // Récupère un livre
-  public function getBook() {
+  public function getBook(int $id) {
+
+    $query = $this->db->query(
+      "SELECT * FROM book
+      WHERE id= $id"
+    );
+    //Extract data from the query as an associative array
+    $book = $query->fetchALL(PDO::FETCH_CLASS, "book");
+    return $book;
+
 
   }
 
   // Ajoute un nouveau livre
-  public function addBook() {
-
+  public function addBook(book $book) {
+    $query = $this->db->prepare(
+      "INSERT INTO book (title, author, summary, publication) VALUES(:title, :author, :summary, :publication)"
+    );
+    $result = $query->execute([
+      "title" => $book->getTitle(),
+      "author"=> $book->getAuthor(),
+      "summary"=> $book->getSummary(),
+      "publication"=> $book->getPublication()
+    ]);
+   
+    return $result;
   }
 
   // Met à jour le statut d'un livre emprunté
@@ -41,3 +60,4 @@ class BookManager {
   }
 
 }
+
