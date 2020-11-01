@@ -46,10 +46,27 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Livre ajouté :</h5>
                     <p class="card-text text-center">Vous venez d'ajouter le livre suivant:</p>
+                    <br>
+                    <p><strong>Titre:</strong></p>
                     <?php
-                    // echo $book->setTitle($data["title"]);
+                    echo $title;
                     ?>
-                    <?php echo $book->getTitle(); ?>
+                    <br><br>
+                    <p><strong>Auteur:</strong></p>
+                    <?php
+                    echo $author;
+                    ?>
+                    <br><br>
+                    <p><strong>Synopsis:</strong></p>
+                    <?php
+                    echo $summary;
+                    ?>
+                    <br><br>
+                    <p><strong>Date de parution:</strong></p>
+                    <?php
+                    echo $publication;
+                    ?>
+
                 </div>
             </div>
         </div>

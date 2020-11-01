@@ -35,7 +35,7 @@ class BookManager {
   // Ajoute un nouveau livre
   public function addBook(book $book) {
     $query = $this->db->prepare(
-      "INSERT INTO book (title, author, summary, publication) vALUES(:title, :author, :summary, :publication)"
+      "INSERT INTO book (title, author, summary, publication) VALUES(:title, :author, :summary, :publication)"
     );
     $result = $query->execute([
       "title" => $book->getTitle(),
